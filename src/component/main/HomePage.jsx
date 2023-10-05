@@ -14,7 +14,7 @@ const HomePage = () => {
 
   const getProduct = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/sanpham`);
+      const response = await axios.get(`https://api-sendo.vercel.app/sanpham`);
       // console.log(response.data)
       return response.data;
     } catch (error) {

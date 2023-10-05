@@ -21,7 +21,7 @@ const InforUserPage = () => {
   const putData = async (id, cartItem) => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/user/${currentUser.id}`,
+        `https://api-sendo.vercel.app/user/${currentUser.id}`,
         cartItem
       );
       return response.data;
